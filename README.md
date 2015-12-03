@@ -1,5 +1,7 @@
-node-oembed
+oEmbed.ts
 ===========
+
+...A [TypeScript](www.typescriptlang.org) fork of [astro/node-oembed](https://github.com/astro/node-oembed)
 
 From [oEmbed.com](http://oembed.com/):
 
@@ -18,7 +20,7 @@ information.
 Installation
 ------------
 
-    npm i oembed
+    npm i aendrew/oembed.ts
 
 Don't forget to put it in `dependencies` of your `package.json` later
 if you use this in a node app.
@@ -35,23 +37,6 @@ Features
 * Automatic [Embed.ly](http://embed.ly/) fallback when an API key is provided
 * Uses [htmlparser](https://github.com/tautologistics/node-htmlparser/) for HTML and XML parsing
 
-
-Tools (bin/)
-------------
-
-### oembed_get &lt;URL&gt;
-
-Retrieve and display oEmbed information for a custom URL.
-
-### oembed_httpd &lt;bind-port&gt; [bind-host]
-
-Replicates the embed.ly API in a simple Web server.
-
-### oembed_diff_json_xml &lt;URL&gt;
-
-Compare JSON and XML descriptors for a URL.
-
-
 API (require('oembed'))
 -----------------------
 
@@ -60,7 +45,7 @@ oEmbed information. We always use the `function callback(error,
 result)` convention.
 
 ```javascript
-oembed.fetch(url, { maxwidth: 1920 }, function(error, result) {
+oembed.fetch(url, { maxwidth: 1920 }, (error, result) => {
     if (error)
         console.error(error);
     else
@@ -76,7 +61,6 @@ control:
 * Get and parse descriptors immediately with `oembed.fetchJSON(url,
   callback)` and `oembed.fetchXML(url, callback)` if you have
   discovery information already
-
 
 ### Embed.ly fallback
 

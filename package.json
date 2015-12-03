@@ -1,35 +1,30 @@
 {
   "name": "oembed",
-  "version": "0.1.0",
-  "description": "oEmbed consumer library and tools",
-  "homepage": "http://github.com/astro/node-oembed",
+  "version": "0.0.1",
+  "description": "TypeScript fork of astro/oembed",
+  "homepage": "http://github.com/aendrew/oembed.ts",
   "author": {
-    "name": "Astro",
-    "email": "astro@spaceboyz.net",
-    "url": "http://spaceboyz.net/~astro/"
+    "name": "Ændrew Rininsland",
+    "email": "me@aendrew.com",
+    "url": "http://aendrew.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/astro/node-oembed.git"
+    "url": "git://github.com/aendrew/oembed.ts.git"
   },
   "bugs": {
-    "url": "https://github.com/astro/node-oembed/issues",
-    "email": "astro@spaceboyz.net"
+    "url": "https://github.com/aendrew/oembed.ts/issues",
+    "email": "me@aendrew.com"
   },
   "keywords": [
-    "oembed"
+    "oembed",
+    "typescript"
   ],
-  "main": "lib/oembed.js",
-  "bin": {
-    "oembed_diff_json_xml": "./bin/oembed_diff_json_xml.js",
-    "oembed_get": "./bin/oembed_get.js",
-    "oembed_httpd": "./bin/oembed_httpd.js"
-  },
+  "main": "lib/oembed.ts",
   "dependencies": {
     "htmlparser": ">=1.7.3",
     "npm-zepto": "^1.1.7",
-    "request": ">=2.2.9",
     "superagent": "^1.4.0"
   },
-  "typings": "./lib/oembed.d.ts"
+  "typings": "dist/lib/oembed.d.ts"
 }
