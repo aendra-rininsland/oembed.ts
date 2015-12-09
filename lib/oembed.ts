@@ -15,7 +15,7 @@ import {parse as parseUrl, format as formatUrl, resolve as resolveUrl} from 'url
 let htmlparser = require('node-htmlparser');
 /* tslint:enable */
 
-export class OEmbed {
+export default class OEmbed {
   public static VERSION: string = '0.0.1';
 
   /**
@@ -74,10 +74,10 @@ export class OEmbed {
   };
 
   /**
-   * [discover description]
-   * @param  {string} url [description]
-   * @param  {any}    cb  [description]
-   * @return {any}        [description]
+   * Use oEmbed discovery to get provider information
+   * @param  {string} url Requested URL
+   * @param  {any}    cb  Callback
+   * @return {void}
    */
   public discover(url: string, cb: any): any {
     let req: any;

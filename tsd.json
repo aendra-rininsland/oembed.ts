@@ -13,6 +13,18 @@
     },
     "superagent/superagent.d.ts": {
       "commit": "78d36dd49b6b55b9fdfe61776a12bf05c8b07777"
+    },
+    "mocha/mocha.d.ts": {
+      "commit": "7136728255d96038795d93c3e4b43c3c7de8ac1e"
+    },
+    "assertion-error/assertion-error.d.ts": {
+      "commit": "7136728255d96038795d93c3e4b43c3c7de8ac1e"
+    },
+    "chai/chai.d.ts": {
+      "commit": "7136728255d96038795d93c3e4b43c3c7de8ac1e"
+    },
+    "sinon/sinon.d.ts": {
+      "commit": "7136728255d96038795d93c3e4b43c3c7de8ac1e"
     }
   }
 }
